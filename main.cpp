@@ -22,7 +22,15 @@ void getZodiacInfo(int day, int month) {
     } else if ((month == 9 && day >= 23) || (month == 10 && day <= 22)) {
         sign = "Libra (الميزان)";
         traits = "دبلوماسية، رقيقة، وتحب التوازن والجمال.";
-    } else if ((month == 10 && day >= 23) || (month == 11 && day <= 21)) {
+    } else if ((month == 10 && day >= 23) || (month == 11 && day <= 21)) {sign = "Gemini (الجوزاء)";
+        traits = "اجتماعية، فضولية، وسريعة التعلم.";
+    } else if ((month == 6 && day >= 21)  (month == 7 && day <= 22)) {
+        sign = "Cancer (السرطان)";
+        traits = "عاطفية، حنونة، ووفية جداً لعائلتها.";
+    } else if ((month == 7 && day >= 23)  (month == 8 && day <= 22)) {
+        sign = "Leo (الأسد)";
+        traits = "قوية، كريمة، وتحب لفت الأنظار بجمالها.";
+    } else if ((month == 8 && day >= 23) || (month == 9 && day <= 22)) {
         sign = "Scorpio (العقرب)";
         traits = "شغوفة، غامضة، ولديها حدس قوي جداً.";
     } else if ((month == 11 && day >= 22) || (month == 12 && day <= 21)) {
