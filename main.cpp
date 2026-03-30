@@ -35,7 +35,14 @@ void getZodiacInfo(int day, int month) {
         sign = "Unknown";
     }
 
-   
+if (sign != "Unknown") {
+        cout << L_PINK << "🌙 برجكِ هو: " << WHITE << sign << endl;
+        cout << PINK << "✨ صفاتكِ المميزة: " << WHITE << traits << endl;
+        cout << L_PINK << "🔮 نصيحة لكِ: " << WHITE << "تألقي دائماً، فالعالم يحتاج لنوركِ!" << endl;
+    } else {
+        cout << PINK << "❌ التاريخ غير صحيح، يرجى التأكد من المدخلات." << endl;
+    }
+}   
 
 int main() {
     int day, month;
