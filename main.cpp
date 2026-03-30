@@ -1,6 +1,5 @@
 #include <iostream>
 #include <string>
-
 using namespace std;
 
 // --- إعدادات الألوان (تنسيق فاطمة الخاص) ---
@@ -12,7 +11,19 @@ using namespace std;
 
 // دالة تحديد البرج والصفات (بواسطة فاطمة)
 void getZodiacInfo(int day, int month) {
-  
+  string sign = "";
+    string traits = "";
+
+    if ((month == 1 && day >= 20)  (month == 2 && day <= 18)) {
+        sign = "Aquarius (الدلو)";
+        traits = "مستقلة، ذكية، ومبدعة جداً.";
+    } else if ((month == 2 && day >= 19)  (month == 3 && day <= 20)) {
+        sign = "Pisces (الحوت)";
+        traits = "حساسة، خيالية، ولديها روح فنية.";
+    } else if ((month == 3 && day >= 21)  (month == 4 && day <= 19)) {
+        sign = "Aries (الحمل)";
+        traits = "شجاعة، واثقة، ومليئة بالطاقة.";
+    } else if ((month == 4 && day >= 20)  (month == 5 && day <= 20)) {
         sign = "Taurus (الثور)";
         traits = "صبورة، مخلصة، وتحب الأشياء الجميلة.";
     } else if ((month == 5 && day >= 21) || (month == 6 && day <= 20)) {
